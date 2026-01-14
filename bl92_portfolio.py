@@ -11,8 +11,11 @@ import cufflinks
 import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
+import plotly.io as pio
+cufflinks.go_offline()
 cufflinks.set_config_file(offline=True)
 np.set_printoptions(suppress=True, precision=4)
+pio.renderers.default = "colab"
 
 
 class FinancialData:

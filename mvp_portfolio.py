@@ -12,7 +12,10 @@ import eikon as ek
 import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
+import plotly.io as pio
+cufflinks.go_offline()
 cufflinks.set_config_file(offline=True)
+pio.renderers.default = "colab"
 np.set_printoptions(suppress=True, precision=4)
 
 
